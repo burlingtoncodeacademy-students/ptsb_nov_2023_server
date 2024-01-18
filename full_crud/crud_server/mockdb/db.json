@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "price": 599.99,
+    "emoji": "📱"
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 899.99,
+    "emoji": "💻"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 129.99,
+    "emoji": "🎧"
+  },
+  {
+    "id": 4,
+    "name": "Pizza",
+    "category": "Food",
+    "price": 14.99,
+    "emoji": "🍕"
+  },
+  {
+    "id": 5,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 149.99,
+    "emoji": "⌚"
+  },
+  {
+    "id": 6,
+    "name": "Sushi Set",
+    "category": "Food",
+    "price": 29.99,
+    "emoji": "🍣"
+  },
+  {
+    "id": 7,
+    "name": "4K TV",
+    "category": "Electronics",
+    "price": 699.99,
+    "emoji": "📺"
+  },
+  {
+    "id": 8,
+    "name": "Burger Combo",
+    "category": "Food",
+    "price": 9.99,
+    "emoji": "🍔"
+  },
+  {
+    "id": 9,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 59.99,
+    "emoji": "🔊"
+  },
+  {
+    "id": 10,
+    "name": "Ice Cream Tub",
+    "category": "Food",
+    "price": 5.99,
+    "emoji": "🍦"
+  }
+]
