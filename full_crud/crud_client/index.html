@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Client</title>
+
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      p {
+        font-size: 1.3em;
+      }
+      #data {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+      .item {
+        background-color: rgba(0, 0, 170, 0.2);
+        width: 18em;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 1em;
+        border: 0.1em solid black;
+        filter: drop-shadow(0.1em 0.1em 0.1em white);
+      }
+      h2 {
+        font-size: 6em;
+        margin-bottom: 0.1em;
+        margin-top: 0.1em;
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.3em;
+        text-shadow: 0.009em 0.009em 0.009em black;
+      }
+    </style>
+
+    <div>
+      <h1>Get</h1>
+      <button id="get-all">Get All</button>
+
+      <h1>Create</h1>
+      <form id="create">
+        <div style="display: flex; flex-direction: column">
+          <input placeholder="name" name="name" required />
+          <input placeholder="category" name="category" required />
+          <input placeholder="price" name="price" required />
+          <input placeholder="emoji" name="emoji" required />
+          <button type="submit">Create</button>
+        </div>
+      </form>
+
+      <h1>Update</h1>
+      <form id="update">
+        <div style="display: flex; flex-direction: column">
+          <input placeholder="id" name="id" required />
+          <input placeholder="name" name="name" required />
+          <input placeholder="category" name="category" required />
+          <input placeholder="price" name="price" required />
+          <input placeholder="emoji" name="emoji" required />
+          <button type="submit">Update</button>
+        </div>
+      </form>
+
+      <h1>Delete</h1>
+      <form id="delete">
+        <input name="delete" required />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+
+    <div>
+      <h1>Results:</h1>
+      <div id="data"></div>
+    </div>
+  </body>
+</html>
