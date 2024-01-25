@@ -51,6 +51,50 @@ createForm.addEventListener("submit", async (e) => {
   }
 });
 
+updateForm.addEventListener("submit", async (e) => {
+  try {
+    e.preventDefault();
+
+    const json = await (
+      await fetch(`http://localhost:9000/crud/update/${updateForm.id.value}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: updateForm.name.value,
+          category: updateForm.category.value,
+          price: updateForm.price.value,
+          emoji: updateForm.emoji.value,
+        }),
+      })
+    ).json();
+
+    // function call to show stuff
+    showMyStuff(json.Results);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+deleteForm.addEventListener("submit", async (e) => {
+  try {
+    e.preventDefault();
+    const json = await (
+      await fetch(
+        `http://localhost:9000/crud/delete/${deleteForm.delete.value}`,
+        {
+          method: "DELETE",
+        }
+      )
+    ).json();
+
+    showMyStuff(json.Results);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 function showMyStuff(jsonArr) {
   while (dataDiv.firstChild) {
     dataDiv.removeChild(dataDiv.firstChild);
