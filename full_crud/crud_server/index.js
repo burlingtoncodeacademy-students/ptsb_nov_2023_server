@@ -1,8 +1,10 @@
 const express = require("express");
 const cors = require("cors");
+
 const app = express();
 
 const crudController = require("./controllers/crud-controller");
+
 const PORT = 9000;
 
 // Required to parse through JSON data that the server receives
